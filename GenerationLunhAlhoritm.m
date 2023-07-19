@@ -4,9 +4,10 @@ clc
 
 % ans=[1,0,3,2,7,2,2,2,6,4,1,6,5,8,9,2];
 ans=0;
-for i=1:1:16
+n=16;
+for i=1:1:n
     
-    if i==16
+    if i==n
         if mod(b,10)>0         a=10- mod(b,10);
         end
         if mod(b,10)==0        a=0;        
@@ -32,7 +33,7 @@ for i=1:2:length(ans)
     k=k+1;
 end
 k=1;
-result= zeros(1,16);
+result= zeros(1,n);
 for i=1:1:length(result)/2
     result(k)=mass(i);
     result(k+1)=ans(k+1);
